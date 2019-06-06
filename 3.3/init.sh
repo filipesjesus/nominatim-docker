@@ -2,6 +2,8 @@ OSMFILE=$1
 PGDIR=$2
 THREADS=$3
 
+echo "Diretorio osm pbf: $OSMFILE"
+
 mkdir -p /data/$PGDIR && \
 
 chown postgres:postgres /data/$PGDIR && \
